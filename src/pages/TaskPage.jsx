@@ -8,7 +8,7 @@ function TaskPage() {
   const text = searchParams.get("text");
   const description = searchParams.get("description");
   return (
-    <div className="h-screen w-screen  bg-slate-500 flex justify-center p-6">
+    <div className="h-screen w-screen  bg-sky-900 flex justify-center p-6">
       <div className="w-[500px] space-y-4">
         <div className="flex justify-center relative">
           <button
@@ -19,11 +19,10 @@ function TaskPage() {
           </button>
           <Tittle>Detalhes da Tarefa</Tittle>
         </div>
-        <div className="bg-slate-200 p-4 rounded-md">
-          <h2 className="text-xl  font-bold text-slate-600">{text}</h2>
-          <p className="text-slate-600">{description}</p>
-        </div>
-      </div>
+ <div className="bg-slate-400 p-4 rounded-md">
+          <h2 className="text-xl  font-bold text-slate-50">{text}</h2>
+          <p className="text-slate-200">{description}</p>
+        </div>      </div>
     </div>
   );
 }
