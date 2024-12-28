@@ -15,7 +15,7 @@ function App() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
-  useEffect(() => {
+  /*useEffect(() => {
     async function getasksFetch() {
       // Chama a API
       const response = await fetch(
@@ -41,7 +41,7 @@ function App() {
     }
 
     getasksFetch();
-  }, []);
+  }, []);*/
 
   // Função que lida com a conclusão de uma tarefa
   function onTaskClicked(taskId) {
@@ -76,7 +76,7 @@ function App() {
 
   return (
     <Bg>
-      <div className="w-[800px] h-full space-y-4">
+      <div className="w-[700] space-y-4">
         <Tittle>Gerenciador de Tarefas</Tittle>
 
         <AddTasks onAddTaskSubmit={onAddTaskSubmit} />
