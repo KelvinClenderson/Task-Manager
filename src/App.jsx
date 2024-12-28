@@ -76,7 +76,7 @@ function App() {
 
   return (
     <Bg>
-      <div className="w-[800px] space-y-4">
+      <div className="w-[800px] h-full space-y-4">
         <Tittle>Gerenciador de Tarefas</Tittle>
 
         <AddTasks onAddTaskSubmit={onAddTaskSubmit} />

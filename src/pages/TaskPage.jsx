@@ -19,10 +19,11 @@ function TaskPage() {
           </button>
           <Tittle>Detalhes da Tarefa</Tittle>
         </div>
- <div className="bg-slate-400 p-4 rounded-md">
+        <div className="bg-slate-400 p-4 rounded-md">
           <h2 className="text-xl  font-bold text-slate-50">{text}</h2>
           <p className="text-slate-200">{description}</p>
-        </div>      </div>
+        </div>
+      </div>
     </div>
   );
 }
