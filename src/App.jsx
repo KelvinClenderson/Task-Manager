@@ -15,6 +15,7 @@ function App() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
+  /*
   useEffect(() => {
     async function getasksFetch() {
       // Chama a API
@@ -42,6 +43,7 @@ function App() {
 
     getasksFetch();
   }, []);
+*/
 
   // Função que lida com a conclusão de uma tarefa
   function onTaskClicked(taskId) {

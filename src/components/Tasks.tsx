@@ -1,4 +1,11 @@
-import { CircleChevronRight, Trash } from "lucide-react";
+import {
+  Check,
+  CheckCircle2Icon,
+  CircleChevronRight,
+  Square,
+  SquareCheck,
+  Trash,
+} from "lucide-react";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
@@ -19,10 +26,11 @@ function Tasks(props) {
         <li key={task.id} className=" flex gap-2">
           <button
             onClick={() => props.onTaskClicked(task.id)}
-            className={`bg-sky-800 text-left w-full text-white p-2 rounded-md ${
+            className={`bg-sky-800 text-left w-full flex items-center gap-2 text-white p-2 rounded-md ${
               task.isCompleted ? "line-through" : ""
             }`}
           >
+            {task.isCompleted ? <SquareCheck /> : <Square />}
             {task.text}
           </button>
           <Button onClick={() => onSeeDeatailsClicked(task)}>
